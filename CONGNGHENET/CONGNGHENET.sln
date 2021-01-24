@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CONGNGHENET", "CONGNGHENET\CONGNGHENET.csproj", "{52875A05-6F9A-4B9F-AD1A-02BAF86D623B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52875A05-6F9A-4B9F-AD1A-02BAF86D623B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52875A05-6F9A-4B9F-AD1A-02BAF86D623B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52875A05-6F9A-4B9F-AD1A-02BAF86D623B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52875A05-6F9A-4B9F-AD1A-02BAF86D623B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA1E960A-34D0-4E59-AD53-32BFB28E6CB3}
+	EndGlobalSection
+EndGlobal

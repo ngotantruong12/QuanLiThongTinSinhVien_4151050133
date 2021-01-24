@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CONGNGHENET.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color: #9999FF;
+        }
+        ul{
+            list-style: none;
+        }
+        .menu{
+            background-color: #9999FF;
+        }
+        .menu_top{
+            margin-left:200px;
+            
+            padding: 10px;
+        }
+        .menu_top ul li{
+             display: inline-block;
+             vertical-align: middle;
+            margin-right: 250px;
+        }
+            .dropdown{
+            position: relative;
+            display: inline-block;
+}
+            .dropdown .dropdown-content{
+                display: none;
+                position: absolute;
+                z-index: 1;
+                background-color: #9999FF;
+                    
+                    
+                    
+
+            }
+        .dropdown .dropdown-content a:hover {
+            color: white;
+            background-color:#66CCFF;
+               /* #6699FF;*/
+            
+            
+        }
+        .dropdown-content a {
+           color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+    
+        }
+        table{
+            border: 1px solid black;
+        }
+        table{
+            
+            margin: 10px auto;
+            border-collapse:collapse;
+        }
+        body{
+            background-color: white;
+        }
+        .footer{
+            margin-top: 30px;
+            padding: 5px;
+            /* background-color: red; */
+             background-color: #9999FF; 
+             /* mau 2 khung nen*/
+             
+        }
+        .footer ul li {
+            width: 250px;
+            display: inline-block;
+            vertical-align: Top;
+            margin-right: 50px;
+            margin-left: 20px;
+   
+        }
+        .content{
+            text-align: center;
+          
+        }
+         button{
+             background-color: red;
+         }
+    </style>
+</head>
+<body>
+ <form id="form1" runat="server">
+      <div class="container">
+      <div class="menu">
+           <div class="menu_top">
+           <ul>
+               <li>
+                  <a href="TrangChu.aspx"><i>TRANG CHỦ</i></a>
+               </li>
+               <li> 
+                  <a>
+                    <div class="dropdown">
+                        <i>QUẢN LÍ</i>
+                             <div class="dropdown-content">
+                                <a href="SinhVien.aspx">Sinh Viên</a>
+                                 <a href="khoa.aspx">Khoa</a>
+                                <a href="Lop.aspx">Lớp</a>
+                                 <a href="Nganh.aspx">Ngành</a>
+                                 <a href="TinhTrang.aspx">Tình Trạng</a>
+                                  <a href="GiangVien.aspx">Giảng viên</a>
+                             </div>
+                        </div>
+                       </a>
+                    </li>
+               <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/THONGKE.aspx">THỐNG KÊ</asp:HyperLink>
+               <li>
+                   &nbsp;</li>
+           </ul>
+       </div>
+     </div>
+       <div class="content">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       </div>
+   </div>
+     <div class="footer">
+        <ul>
+            <li>
+               <h4> Giới thiệu</h4>
+              Trường ĐẠI HỌC QUY NHƠN </br>
+              Địa chỉ: 170 An Dương Vương
+            </li>
+            <li>
+                <h4>Mọi phản ánh xin liên hệ:</h4>
+
+                  -  SĐT: 090.1800.888 </br>
+                  <a href="http://www.qnu.edu.vn/">Trang Chủ: http://www.qnu.edu.vn/ </a></br>
+                  -  FaceBook: <a href="https://www.facebook.com/">Đại Học Quy Nhơn</a>
+            </li>
+                <li>
+                   <h4> Ứng Dụng được sản xuất:</h4>
+                   - Công ty gia công phần mềm KTPT </br>
+                   - Địa chỉ: An Dương Vương - Quy Nhơn
+                </li>
+               
+        </ul>
+        
+    </div>
+  </form>
+</body>
+</html>
